@@ -1,0 +1,6 @@
+name: apm-gateway-modar-ext
+service: modelarmor.us-east4.rep.googleapis.com
+metadata:
+  model_armor_settings: '[{"request_template_id": "projects/schwab-agent-poc/locations/us-east4/templates/apm-egress-template", "response_template_id": "projects/schwab-agent-poc/locations/us-east4/templates/apm-egress-template"}]'
+failOpen: true
+timeout: 5s

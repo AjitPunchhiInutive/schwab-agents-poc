@@ -1,0 +1,5 @@
+name: projects/schwab-agent-poc/policies/iam.allowedPolicyMemberDomains
+spec:
+  inheritFromParent: false
+  rules:
+  - allowAll: true

@@ -1,0 +1,7 @@
+name: apm-agent-gateway
+protocols:
+- MCP
+googleManaged:
+  governedAccessPath: AGENT_TO_ANYWHERE
+registries:
+- //agentregistry.googleapis.com/projects/schwab-agent-poc/locations/global

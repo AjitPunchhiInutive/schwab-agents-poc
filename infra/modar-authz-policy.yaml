@@ -1,0 +1,17 @@
+name: apm-gateway-modar-policy
+target:
+  loadBalancingScheme: LOAD_BALANCING_SCHEME_UNSPECIFIED
+  resources:
+  - projects/schwab-agent-poc/locations/us-east4/agentGateways/apm-agent-gateway
+httpRules:
+- to:
+    operations:
+    - paths:
+      - prefix: /
+  when: "!request.headers['content-type'].startsWith('application/grpc') && !request.path.endsWith(':generateContent') && !request.path.endsWith(':streamGenerateContent')"
+action: CUSTOM
+policyProfile: CONTENT_AUTHZ
+customProvider:
+  authzExtension:
+    resources:
+    - projects/schwab-agent-poc/locations/us-east4/authzExtensions/apm-gateway-modar-ext

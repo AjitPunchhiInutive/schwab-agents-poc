@@ -1,0 +1,15 @@
+{
+  "displayName": "Deny destructive Cloud SQL ops for the APM agent",
+  "rules": [
+    {
+      "denyRule": {
+        "deniedPrincipals": ["principal://agents.global.org-203589767236.system.id.goog/resources/aiplatform/projects/82648816720/locations/us-east4/reasoningEngines/4273537814374645760"],
+        "deniedPermissions": [
+          "sqladmin.googleapis.com/instances.delete",
+          "sqladmin.googleapis.com/instances.update",
+          "sqladmin.googleapis.com/databases.delete"
+        ]
+      }
+    }
+  ]
+}

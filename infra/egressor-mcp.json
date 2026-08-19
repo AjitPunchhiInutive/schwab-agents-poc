@@ -1,0 +1,1 @@
+{"bindings": [{"role": "roles/iap.egressor", "members": ["principal://agents.global.org-203589767236.system.id.goog/resources/aiplatform/projects/82648816720/locations/us-east4/reasoningEngines/4353476707760472064"]}]}

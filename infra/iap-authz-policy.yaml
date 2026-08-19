@@ -1,0 +1,10 @@
+name: apm-gateway-authz-policy
+target:
+  resources:
+    - "projects/schwab-agent-poc/locations/us-east4/agentGateways/apm-agent-gateway"
+policyProfile: REQUEST_AUTHZ
+action: CUSTOM
+customProvider:
+  authzExtension:
+    resources:
+      - "projects/schwab-agent-poc/locations/us-east4/authzExtensions/apm-gateway-authz-ext"

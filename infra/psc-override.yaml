@@ -1,0 +1,5 @@
+name: projects/schwab-agent-poc/policies/compute.disablePrivateServiceConnectCreationForConsumers
+spec:
+  inheritFromParent: false
+  rules:
+  - enforce: false

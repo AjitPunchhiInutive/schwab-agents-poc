@@ -1,0 +1,7 @@
+name: apm-gateway-sgp-ext
+service: us-east4.agentic.internal
+authority: us-east4.agentic.internal
+failOpen: false
+loadBalancingScheme: LOAD_BALANCING_SCHEME_UNSPECIFIED
+metadata:
+  sgpEnforcementMode: "DRY_RUN"
